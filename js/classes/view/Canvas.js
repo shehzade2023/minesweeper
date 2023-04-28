@@ -1,0 +1,36 @@
+class Canvas
+{
+	#context
+	#id
+	constructor(id)
+	{
+		this.#id=id
+		this.#context=window[this.#id].getContext('2d')
+	}
+	draw()
+	{
+		game
+			.points
+			.forEach
+				(
+					(point)=>
+					{
+						this
+							.#context
+							.drawImage
+								(
+									HtmlImage.get(game.getMatrixState(point)),
+									point.x*HtmlImage.size,
+									point.y*HtmlImage.size,
+									HtmlImage.size,
+									HtmlImage.size
+								)
+					}
+				)
+	}
+	setsize(width,height)
+	{
+		window[this.#id].width=width
+		window[this.#id].height=height
+	}
+}

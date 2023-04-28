@@ -1,0 +1,41 @@
+<script src='js/classes/model/matrixes/Matrix.js'></script>
+<script src='js/classes/model/matrixes/BottomMatrix.js'></script>
+<script src='js/classes/model/matrixes/TopMatrix.js'></script>
+<script src='js/classes/model/Game.js'></script>
+<script src='js/classes/model/Point.js'></script>
+<script src='js/classes/view/Canvas.js'></script>
+<script src='js/classes/view/HtmlImage.js'></script>
+<script src='js/classes/view/MouseHandlerer.js'></script>
+<script src='js/core.js'></script>
+<script src='index.js' defer></script>
+<title>minesweeper</title>
+<link rel='stylesheet' href='index.css'/>
+<div>
+	<label>уровень</label>
+	<select id='level'>
+		<option value='NOVICE'>новичок</option>
+		<option value='AMATEUR'>любитель</option>
+		<option value='PRO'>профессионал</option>
+	</select>
+</div>
+<button onclick='runNewGame()'>запустить новую игру</button>
+<div>
+	<img id='img-flag' src='imgs/flag.png'/>
+	<span id='span-flag-count'></span>
+</div>
+<canvas id='canvas-field' onmouseup='MouseHandlerer.mouseUpHandler()' oncontextmenu='MouseHandlerer.contextMenuHandler()'></canvas>
+<div id='hidden'>
+	<img id='img-bang' src='imgs/bang.png'/>
+	<img id='img-default' src='imgs/default.png'/>
+	<img id='img-mine' src='imgs/mine.png'/>
+	<img id='img-non_flag' src='imgs/non_flag.png'/>
+	<img id='img-0' src='imgs/0.png'/>
+	<img id='img-1' src='imgs/1.png'/>
+	<img id='img-2' src='imgs/2.png'/>
+	<img id='img-3' src='imgs/3.png'/>
+	<img id='img-4' src='imgs/4.png'/>
+	<img id='img-5' src='imgs/5.png'/>
+	<img id='img-6' src='imgs/6.png'/>
+	<img id='img-7' src='imgs/7.png'/>
+	<img id='img-8' src='imgs/8.png'/>
+</div>
